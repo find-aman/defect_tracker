@@ -1,4 +1,6 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 class ViewDefects extends React.Component {
     render() {
@@ -6,7 +8,7 @@ class ViewDefects extends React.Component {
             <div>
                 <table align="center">
                     <th>
-                        <h1>Defect Tracker</h1>
+                        <h1 style={{ textAlign: "center" }}>Defect Tracker</h1>
                     </th>
                     <tr>
                         <td align="center">
@@ -21,15 +23,15 @@ class ViewDefects extends React.Component {
                     <tr>
                         <table align="center">
                             <th>
-                                <h2>Filter Details</h2>
+                                <h2 style={{ textAlign: "center" }}>Filter Details</h2>
                             </th>
                             <tr>
                                 Priority &nbsp;
                                 <select>
                                     <option value="All">All</option>
-                                    <option value="High">High</option>
-                                    <option value="Medium">Medium</option>
-                                    <option value="Low">Low</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
                                 </select>
                             </tr>
                             <tr>
@@ -46,7 +48,7 @@ class ViewDefects extends React.Component {
                     <tr>
                         <table>
                             <th>
-                                <h2>Defect Details</h2>
+                                <h2 style={{ textAlign: "center" }}>Defect Details</h2>
                             </th>
                             <tr>
                                 <td align="center">
