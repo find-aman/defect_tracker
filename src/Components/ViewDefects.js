@@ -1,5 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import DefectDetails from './DefectDetails';
 
 
 class ViewDefects extends React.Component {
@@ -46,54 +47,7 @@ class ViewDefects extends React.Component {
                         </table>
                     </tr>
                     <tr>
-                        <table>
-                            <th>
-                                <h2 style={{ textAlign: "center" }}>Defect Details</h2>
-                            </th>
-                            <tr>
-                                <td align="center">
-                                    Search Results: 3
-                                </td>
-                            </tr>
-                            <tr>
-                                <table border="1">
-                                    <tr bgcolor="#077ff7">
-                                        <th>
-                                            Defect Category
-                                        </th>
-                                        <th>
-                                            Description
-                                        </th>
-                                        <th>
-                                            Priority
-                                        </th>
-                                        <th>
-                                            Status
-                                        </th>
-                                        <th>
-                                            Change Status
-                                        </th>
-                                    </tr>
-                                    <tr bgcolor="#cfefff">
-                                        <td align="center">
-                                            UI
-                                        </td>
-                                        <td align="center">
-                                            Submit Button coming to the extreme left. Refer to the screnshot.
-                                        </td>
-                                        <td align="center">
-                                            2
-                                        </td>
-                                        <td align="center">
-                                            Open
-                                        </td>
-                                        <td align="center">
-                                            Close Defect
-                                        </td>
-                                    </tr>
-                                </table>
-                            </tr>
-                        </table>
+                        <DefectDetails />
                     </tr>
                 </table>
             </div >
