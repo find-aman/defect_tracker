@@ -1,17 +1,28 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import axios from 'axios';
 
 
 class DefectDetails extends React.Component {
     constructor(props) {
         super(props)
-        this.state = [{
-            defectCategory: "UI",
-            description: "Submit Button coming to the extreme left. Refer to the screnshot.",
-            priority: 2,
-            status: "Open",
-            changeStatus: "Close Defect"
-        }]
+        this.state = {
+            defectDetails: []
+        }
+    }
+
+    componentDidMount() {
+        axios.get('defects.json')
+            .then(result =>
+                this.setState({
+                    defectDetails: result.data
+                })
+            )
+            .catch(error =>
+                this.setState({
+                    error
+                })
+            );
     }
 
     render() {
@@ -45,7 +56,7 @@ class DefectDetails extends React.Component {
                                     Change Status
                                         </th>
                             </tr>
-                            {this.state.map(details => {
+                            {this.state.defectDetails.map(details => {
                                 return (
                                     <tr bgcolor="#cfefff" style={{ textAlign: "center" }}>
                                         <td>

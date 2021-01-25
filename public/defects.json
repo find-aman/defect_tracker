@@ -1,0 +1,30 @@
+[
+    {
+        "defectCategory": "UI",
+        "description": "Submit Button coming to the extreme left. Refer to the screnshot.",
+        "priority": 2,
+        "status": "Open",
+        "changeStatus": "Close Defect"
+    },
+    {
+        "defectCategory": "UI",
+        "description": "Submit Button coming to the extreme left. Refer to the screnshot.",
+        "priority": 2,
+        "status": "Open",
+        "changeStatus": "Close Defect"
+    },
+    {
+        "defectCategory": "UI",
+        "description": "Submit Button coming to the extreme left. Refer to the screnshot.",
+        "priority": 2,
+        "status": "Open",
+        "changeStatus": "Close Defect"
+    },
+    {
+        "defectCategory": "UI",
+        "description": "Submit Button coming to the extreme left. Refer to the screnshot.",
+        "priority": 2,
+        "status": "Open",
+        "changeStatus": "Close Defect"
+    }
+]
