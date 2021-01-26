@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import ViewDefects from './Components/ViewDefects'
 import reportWebVitals from './reportWebVitals';
+import Login from './Components/Login';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ViewDefects />
+    {/* <ViewDefects /> */}
+    <Login />
   </React.StrictMode >,
   document.getElementById('root')
 );

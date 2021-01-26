@@ -12,7 +12,7 @@ class DefectDetails extends React.Component {
     }
 
     componentDidMount() {
-        axios.get('defects.json')
+        axios.get('db.json')
             .then(result =>
                 this.setState({
                     defectDetails: result.data
